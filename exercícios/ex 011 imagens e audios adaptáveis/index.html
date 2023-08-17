@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dinimua o tamanho do seu navegador</p>
+<!--É preciso colocar a mesma imagem de tamanhos variados para possibilitar a visualização em vários dispositivos (obedecendo sempre a ordem de tamanho, da menor para a maior), lembrando que a adaptação gera em torno do tamanho da imagem, deixando uma folga para ele não criar barra de rolagem (tomar cuidado com o tamanho das imagens para não deixar o site pesado)-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir Áudio em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio> <!--geralmente a maioria dos navegadores são compatíveis com MP3, OGG e WAV, nesse caso é recomendado colocar todas as opções para que o navegar abra pelo menos uma(lembrando que os parâmetros "autoplay" é para o audio começar automaticamente, "controls" apresenta os botões para controlar o audio e "loop" é para dar replay no audio) Nesse caso, a melhor forma de proceser é a seguinte:-->
+
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio> <!--Deve-se evitar as mídias WAV pq elas são muito grandes e pesam no carregamento do site) É PRECISO QUE OS ARQUIVOS EXISTAM, POIS AQUI ESTÁ SÓ O EXEMPLO-->
+</body>
+</html>

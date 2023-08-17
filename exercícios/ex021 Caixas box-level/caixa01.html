@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <!-- Podemos modificar a anatomia de qualquer caixa para trabalhar suas configurações através da propriedade 'display' transformando as box-level em inline e as inline-level em block. também é possivel transformar uma caixa em "inline-block", ou seja, ela continua sendo inline, mas conseguimos configurá-la com características de blocos (altura, largura...). -->
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*
+            As configurções 'border', 'padding', 'margin' e 'outline' podem ser simplificadas desque que obedeça a escala de tamanho em ordem horária.            
+
+            border: 10px solid darkslategray;
+
+            Quando os 4 valores forem iguais basta informá-los uma única vez. Quando é informado 2 valores o 1º se refere a superior e inferio e o 2º valor se refere a direita e esquerda
+
+            padding: 10px;
+
+            margin: 20px 20px 40px 20px;
+            
+            Também podendo ser representado de forma que automaticamente será centralizado para qualquer tamanho de tela
+            
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+            */
+        }
+
+        a {
+            border-width: 5px;
+            border-style: double;
+            border-color: red;
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="@">links são exemplos de caixas inline</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <!-- Para apicar uma font externa basta entrar em um site de fontes (de preferência: dafont.com), baixar a família (depois de verficar se ela tem todos os caracteres que irei utilizar), extrair todo o conteúdo da pasta zipada que será criada e aplicar no código através da regra '@', nesse caso: "@font-face". O nome da família é a gente que escolhe, mas a 'url' tem que ser digitada sem nenhum erro e não pode esquecer do 'format'. -->
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/Mf Love Song.ttf')format('truetype');
+            font-weight: normal;
+            font-size: normal;
+        }
+
+        @font-face {
+            font-family: 'Feeling';
+            src: url('fonts/Feeling Lovely.ttf')format('truetype');
+        }
+        
+        /*
+            Tipos de Format:
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-eat (Apple Advanced Typography)
+            - svg
+            */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        p {
+            font-family: 'Feeling', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, quidem voluptatibus quasi placeat ipsa cupiditate. Velit dolorum cumque dolore! Voluptatem, quos provident. Nobis quod reprehenderit possimus ipsa! Sequi, incidunt?</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*  Tudo que estiver em 'id' no HTML, no CSS será '#' (somente 1 elemento em cada página de HTML do mesmo documento)
+    Tudo que estiver em 'class' no HTML, no CSS será '.' (possível mais de 1 elemento)
+    Tudo que estiver um uma 'pseudoclasse' no HTML, no CSS seré ':'
+*/
+
+body {
+    background-color: rgb(226, 253, 223);
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+/* isso é um seletor 'principal' (o uso do '#' para o 'id' */
+h1#principal {
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+}
+
+h2 {
+    color: rgb(51, 77, 49);
+}
+
+/* No 'class' não se coloca a identificaçãoz apenas o '.' mesmo.*/
+.basico {
+    color: #3c805e;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}

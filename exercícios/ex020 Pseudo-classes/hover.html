@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <!-- O "hover" é o comando para exibição quando passamos o mouse em cima do local desejado
+    A 'div' vai indicar a área que precisa ser destacada para a funcionalidade e os comandos vão determinar o que deve ser escondido e o que deve ser exibido
+    - SELETORES PERSONALIZADOS:
+       #  = id
+       >  = children
+       .  = class
+       :  = pseudo-class
+       :: = pseudo-element-->
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Essa é a função para esconder o paragráfo */
+        div > p {
+            display: none;
+        }
+
+        /* Essa é a função para exibir o conteúdo desejado*/
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>Exemplo de Hover
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>       
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
