@@ -3,76 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Filmes Favoritos</title>
+    <title>Exercício de Tabelas</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
+            width: 500px;
             border-collapse: collapse;
-            width: 700px;
         }
         caption {
-            background-color: lightgray;
-            font-size: bold;
-            font-weight: 10px;
-            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
         }
-        td, th {
+        th, td {
             border: 1px solid black;
-            text-align: center;
-            padding: 10px;
+            padding: 8px;
+        }
+        col.cnome {
+            background-color: chartreuse;
         }
     </style>
 </head>
 <body>
-    <h1>Exercício de Tabelas</h1>
+    <h1>Exercío de Tabelas</h1>
     <table>
-        <caption>Filmes Favoritos</caption>
-        <thead>
-            <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col">Nomes</th>
-                <th scope="colgroup" colspan="3">Filmes</th>
-            </tr>
-        </thead>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
         <tr>
-            <th scope="rowgroup" rowspan="3">Mulheres</th>
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
+            <th scope="col" >Nome</th>
+            <th scope="col" >Sexo</th>
+            <th scope="col" >Idade</th>
+            <th scope="col" >Profissão</th>
         </tr>
         <tr>
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inceptio</td>
-            <td>Batman</td>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
         </tr>
         <tr>
-            <td>Cláudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
         </tr>
         <tr>
-            <th scope="rowgroup" rowspan="3">Homens</th>
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
         </tr>
         <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
         </tr>
         <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Oávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
 </body>
