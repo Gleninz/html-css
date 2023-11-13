@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title> <!-- iframe é um quadro que exibe o site informado na src da tag, porém existem alguns sites que não permitem a exibição por questão de segurança -->
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
+
+    <p>O site do <iframe src="https://www.google.cm.br" frameborder="0"></iframe> é muito legal, pena que não funciona dentro do iframe.</p>
+
+    <!-- Alguns celulares não são compatíveis com iframe, nesse caso, ao invés de colocar uma frase informando a incompatibilidade, adicione um link com o site correspodente -->
+
+    <p>O repositório do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0"> no <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></iframe> também é legal.</p>
+
+    <!-- O tamanho padrão do iframe é 300x150 px, podendo ser configurado diretamente na tag quanto nas CSS, sendo que a configuração das CSS são as que prevalescem-->
+
+    <p>Acessando o site do
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500" scolling="no">
+        </iframe> para aprender a programar.
+    </p>
+    
+    <!-- O parâmetro "scolling" define o uso da barra de rolagem do iframe, as opções são: 'auto' ((padrão) se o conteúdo exceder o tamanho da janela do iframe ele cria a barra de rolagem), 'yes' (mesmo que o conteúdo caiba dentro da janela ele cria a barra de rolagem) e o 'no' (mesmo que o conteúde seja maior ele não permite a rolagem)
+    
+    O parâmetro "frameborder" tem valores '0' e '1' (sem e com borda na janela) a cnfiguração e o estilo da borda é feito nas CSS-->
+
+</body>
+</html>
