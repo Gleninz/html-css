@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse eos quam expedita officia culpa ullam odit? Eveniet quasi voluptas rem maiores maxime aspernatur saepe! Amet ut voluptate consequatur fuga ipsa?</p>
 
-    
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <!-- Para os links aparecerem dentro do iframe, eles precisam ser apontados através do "target", por isso o "target" precisa receber o mesmo valor do "name" dado ao iframe-->
 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore dignissimos perferendis animi illo eius veniam officiis voluptatibus tenetur officia! Sunt totam autem vero maxime ipsam nulla tempore reprehenderit cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque nostrum corporis tempore consectetur deleniti pariatur delectus quasi recusandae, hic sed cum quae fugit itaque consequatur possimus ducimus earum quam.</p>
+
+    <!-- O iframe está sendo criado para exibir os links da lista. Para isso é preciso utilizar a propriedade "name" para o iframe e a propriedade "target" para o link a ser exibido. O uso do "id" é opcional. -->
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ea accusantium dolore, dignissimos doloremque non fugit temporibus tenetur beatae autem. Quae temporibus qui harum saepe repellendus. Cupiditate repellat veniam nisi!</p><img src='imagem/html5_logo2.png'>">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem nostrum, nulla earum deserunt animi ipsum commodi ea quos repellat similique, architecto modi tempore nemo quibusdam, voluptates nam quia alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum deserunt doloremque quaerat possimus! Sit sed enim fugiat, eius accusamus nesciunt magnam, libero architecto doloribus alias natus, quae repudiandae? Sed?</p>
 </body>
 </html>
