@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ullam, vel architecto quis porro quae voluptatem voluptates? Minima, quo! Doloribus velit quibusdam rerum magni illum quos sapiente. Deleniti, iusto neque.</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer">Seu navegador não é compatível</iframe>
+    
+    <!-- As propriedades "sandbox=sandbox" e "referrerpolicy=no-referrer" bloqueiam o site do iframe impedindo que ele colete dados do usuário. É possível permitir ações individualmente determinando os valores da propriedade "sandbox"-->
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">Seu navegador não é compatível</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam sint incidunt porro neque repellat maiores at corrupti, sunt praesentium sed nemo dolorum vitae aliquam nesciunt culpa nisi. Cupiditate, dolore.</p>
+</body>
+</html>
