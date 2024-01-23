@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php ">
+
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p> 
+
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p> 
+    </form>
+    <!-- 
+    ->'action' é usado para conectar o conteúdo do formulário à linguagem que usará as informações digitadas
+
+    ->É o 'label' que vai conectar o título da caixa ao conteúdo digitado nela
+
+    ->O input é que determina o tipo de caixa, 'text' para caixa de text, 'submit' para botão. O 'name' é o informante da linguagem HTML e PHP e o 'id' é o informante do JavaScript
+
+    ->'value' é o texto que vai aparecer dentro da caixa, que geralmente é um botão
+    -->
 </body>
 </html>
